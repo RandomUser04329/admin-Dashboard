@@ -2,14 +2,58 @@
     border: 2px solid red;
 }
 
-body { 
-    height: 100vh;
+
+
+/*HTML BODY SETTINGS*/
+body, html { 
     border: 0;
     margin: 0;
 }
 
 .container { 
+    height: 100vh;
     display: grid; 
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
 }
+
+
+
+
+
+
+/*HEADER CONTAINERS + STYLES*/
+.header-container {
+    grid-column: 2 / span 2;
+
+}
+
+
+
+
+
+
+
+
+/*SIDEBAR CONTAINERS + STYLES*/
+
+.sidebar-container {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+
+
+
+
+
+
+
+
+/*MAINCONTENT CONTAINERS + STYLES*/
+
+.maincontent-container {
+    grid-column: 2;
+    grid-row: 2;
+}
+
