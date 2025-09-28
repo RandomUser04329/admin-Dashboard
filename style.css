@@ -3,11 +3,19 @@
 }
 
 
+/*CUSTOM FONT*/
+
+@font-face {
+    font-family: cstmFont1;
+    src: url("./fonts/Mont-HeavyDEMO.otf");
+}
+
 
 /*HTML BODY SETTINGS*/
 body, html { 
     border: 0;
     margin: 0;
+    font-family: cstmFont1;
 }
 
 .container { 
@@ -38,6 +46,7 @@ body, html {
 /*SIDEBAR CONTAINERS + STYLES*/
 
 .sidebar-container {
+    background-color: rgb(0, 191, 255);
     grid-column: 1;
     grid-row: 1 / span 2;
 }
@@ -53,6 +62,7 @@ body, html {
 /*MAINCONTENT CONTAINERS + STYLES*/
 
 .maincontent-container {
+    background-color: rgb(239, 239, 239);
     grid-column: 2;
     grid-row: 2;
 }
