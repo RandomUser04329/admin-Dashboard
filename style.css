@@ -61,22 +61,34 @@ body, html {
 }
 
 .side-tabs {
-    display: grid;
+ 
 }
 
 .side-tabs2 {
+
+}
+
+#buttonContainer {
     display: grid;
+    grid-template-columns: 45px 10px;
+    align-items: center;
 }
 
 #sideBTNS {
-    width: 0;
-    height: 0;
+    width: 30px;
+    height: 30px;
     background-color: rgb(0, 191, 255);
     border: none;
     color: white;
     cursor: pointer;
     font-family: cstmFont1;
     font-size: 16px;
+
+}
+
+#BTNimage { 
+    width: 40px;
+    height: 40px;
 }
 
 
