@@ -1,4 +1,4 @@
- * {
+ *{
     border: 2px solid red;
 }
 
@@ -30,11 +30,36 @@ body, html {
 
 
 
-/*HEADER CONTAINERS + STYLES*/
+/*HEADER CONTAINERS + PROFILE CONTAINERS + STYLES*/
 .header-container {
     grid-column: 2 / span 2;
-
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 0.4fr 1fr;
 }
+
+.searchbar-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+}
+
+#searchIcon { 
+    width: 23px;
+    height: 23px;
+    justify-self: center;
+}
+
+#searchBar {
+    width: 320px;
+    height: 30px;
+    border: 0;
+    border-radius: 20px;
+    background-color: rgb(237, 237, 237);
+}
+
+
+
 
 
 
@@ -50,7 +75,7 @@ body, html {
     grid-column: 1;
     grid-row: 1 / span 2;
     gap: 30px;
-    padding-left: 5px;
+    padding-left: 20px;
     display: grid;
     grid-template-rows: 0.1fr 0.4fr 0.2fr;
 }
@@ -58,14 +83,6 @@ body, html {
 .side-header {
     color: white;
     justify-self: start;
-}
-
-.side-tabs {
- 
-}
-
-.side-tabs2 {
-
 }
 
 #buttonContainer {
@@ -87,6 +104,7 @@ body, html {
 }
 
 #BTNimage { 
+    filter: invert(100%);
     width: 40px;
     height: 40px;
 }
@@ -100,7 +118,7 @@ body, html {
 /*MAINCONTENT CONTAINERS + STYLES*/
 
 .maincontent-container {
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(237, 237, 237);
     grid-column: 2;
     grid-row: 2;
 }
