@@ -1,4 +1,4 @@
- *{
+ * {
     border: 2px solid red;
 }
 
@@ -21,8 +21,8 @@ body, html {
 .container { 
     height: 100vh;
     display: grid; 
-    grid-template-columns: 1fr 2.5fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 
@@ -34,8 +34,8 @@ body, html {
 .header-container {
     grid-column: 2 / span 2;
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 0.4fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr 2fr;
 }
 
 .searchbar-container {
@@ -51,11 +51,26 @@ body, html {
 }
 
 #searchBar {
-    width: 320px;
+    width: 500px;
     height: 30px;
     border: 0;
     border-radius: 20px;
     background-color: rgb(237, 237, 237);
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.notifyIcon {
+    width: 25px;
+    height: 25px;
+}
+
+.profileIcon {
+    width: 25px;
+    height: 25px;
 }
 
 
