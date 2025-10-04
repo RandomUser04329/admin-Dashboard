@@ -1,4 +1,4 @@
- * {
+  {
     border: 2px solid red;
 }
 
@@ -16,6 +16,7 @@ body, html {
     border: 0;
     margin: 0;
     font-family: cstmFont1;
+    height: 100vh;
 }
 
 .container { 
@@ -34,33 +35,38 @@ body, html {
 .header-container {
     grid-column: 2 / span 2;
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
+    grid-template-columns: 1fr 200px;
     grid-template-rows: 1fr 2fr;
 }
 
 .searchbar-container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 60px 1fr;
     align-items: center;
 }
 
 #searchIcon { 
-    width: 23px;
-    height: 23px;
+    width: 25px;
+    height: 25px;
     justify-self: center;
 }
 
 #searchBar {
-    width: 500px;
+    width: 1fr;
     height: 30px;
     border: 0;
     border-radius: 20px;
     background-color: rgb(237, 237, 237);
+    text-align: center;
 }
 
+
+/*PROFILE CONTAINER + STYLES*/
 .profile-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
 .notifyIcon {
@@ -69,8 +75,47 @@ body, html {
 }
 
 .profileIcon {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
+}
+
+#username {
+    border: 0;
+    font-family: cstmFont1;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+/*2ND PROFILE CONTAINER + STYLES */
+
+.profileInfo-container {
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 100px 200px 1fr;
+}
+
+.profile-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.userName-container {
+   display: grid;
+   grid-template-rows: 12px 16px;
+   align-content: center;
+}
+
+#userGreet {
+    font-size: 12px;
+    margin: 0;
+}
+
+#usersName {
+    font-size: 16px;
+    margin: 0;
 }
 
 
@@ -89,15 +134,14 @@ body, html {
     background-color: rgb(0, 191, 255);
     grid-column: 1;
     grid-row: 1 / span 2;
-    gap: 30px;
-    padding-left: 20px;
     display: grid;
-    grid-template-rows: 0.1fr 0.4fr 0.2fr;
+    grid-template-rows: 100px 300px 100px;
 }
 
 .side-header {
     color: white;
     justify-self: start;
+    font-size: 15px;
 }
 
 #buttonContainer {
