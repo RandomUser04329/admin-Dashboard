@@ -1,5 +1,5 @@
-  * {
-    border: 2px solid red;
+* {
+    border: 1px solid red;
 }
 
 
@@ -208,17 +208,71 @@ body, html {
     grid-column: 2;
     grid-row: 2;
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 2fr 1fr; 
+    grid-template-rows: 1fr 1fr;
 }
 
 .project-container { 
     grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px repeat(2, 1fr);
+}
+
+.project-title {
+    margin: 0;
+    font-size: 16px;
+    grid-column: 1 / span 2;
+    align-self: end;
+
+}
+
+.project-card {
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    color: black;
 }
 
 .announcement-container { 
-    grid-column: 2;
+    grid-row: 1 / span 1;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr;
+    padding: 10px;
 }
 
+.announces-title {
+    grid-row: 1 / span 1;
+    align-self: end;
+}
+
+.announce-card {
+    background-color: white;
+    color: black;
+    justify-self: center;
+    width: 220px;
+    height: 220px;
+}
+
+
+
 .trend-container { 
-    grid-column: 2;
+    grid-row: 2 / span 2;
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
+
+.trends-title {
+    grid-row: 1 / span 1;
+    align-self: start;
+}
+
+.trend-card {
+    background-color: white;
+    color: black;
 }
