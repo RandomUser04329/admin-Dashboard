@@ -23,7 +23,7 @@ body, html {
     height: 100vh;
     display: grid; 
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 
@@ -52,7 +52,7 @@ body, html {
 }
 
 #searchBar {
-    width: 1fr;
+    width: 600px;
     height: 30px;
     border: 0;
     border-radius: 20px;
@@ -217,7 +217,8 @@ body, html {
     grid-row: 1 / span 2;
     display: grid;
     padding: 10px;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 30px 1fr 1fr 1fr 30px;
 }
 
@@ -236,6 +237,7 @@ body, html {
     align-self: center;
     justify-self: center;
     color: black;
+    border-left: 4px solid blue;
 }
 
 .announcement-container { 
@@ -254,9 +256,11 @@ body, html {
 .announce-card {
     background-color: white;
     color: black;
-    justify-self: center;
-    width: 220px;
-    height: 220px;
+    border-left: 4px solid rgb(0, 0, 0);
+    justify-self: start;
+    align-self: center;
+    width: 300px;
+    height: 300px;
 }
 
 
@@ -277,4 +281,13 @@ body, html {
 .trend-card {
     background-color: white;
     color: black;
+    border-left: 4px solid rgb(0, 38, 255);
+    justify-self: start;
+    align-self: center;
+    width: 300px; 
+    height: 300px;
+}
+
+.project-card, .announce-card, .trend-card {
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.1);
 }
