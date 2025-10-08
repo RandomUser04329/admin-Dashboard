@@ -16,14 +16,13 @@ body, html {
     border: 0;
     margin: 0;
     font-family: cstmFont1;
-    height: 100vh;
 }
 
 .container { 
     height: 100vh;
     display: grid; 
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 
@@ -36,7 +35,7 @@ body, html {
     grid-column: 2 / span 2;
     display: grid;
     grid-template-columns: 1fr 200px;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 100px;
 }
 
 .searchbar-container {
@@ -208,7 +207,7 @@ body, html {
     grid-column: 2;
     grid-row: 2;
     display: grid;
-    grid-template-columns: 2fr 1fr; 
+    grid-template-columns: 3fr 1fr; 
     grid-template-rows: 1fr 1fr;
 }
 
